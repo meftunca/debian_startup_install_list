@@ -16,8 +16,9 @@ sudo add-apt-repository ppa:papirus/papirus
 sudo apt-get update
 sudo apt-get install papirus-icon-theme
 
-
-
+## browser and opera
+wget http://download1.operacdn.com/pub/opera/desktop/47.0.2631.80/linux/opera-stable_47.0.2631.80_amd64.deb
+dpkg -i opera-stable_47.0.2631.80_amd64.deb 
 
 ## ubuntu theme
 sudo apt-add-repository ppa:tista/adapta
@@ -40,11 +41,11 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html
 
 apt-get -f install
 
-sudo apt-get install git ruby sass 
+sudo apt-get install git ruby sass nodejs npm
 sudo apt-get install curl
 sudo curl -s https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
-
+ln -s /usr/bin/nodejs /usr/bin/node
 apt-get -f install
 
 # chmod settings for www path
@@ -72,41 +73,7 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 
 apt-get -f install
-
-# Download and install PHPStorm
-wget https://download-cf.jetbrains.com/webide/PhpStorm-2017.2.4.tar.gz
-
-tar -xvf PhpStorm-2017.2.4.tar.gz
-
-cd PhpStorm-*/bin
-
-./phpstorm.sh
-
-### install webstorm ide
  
-
-# Download and install WEBStorm
-wget https://download-cf.jetbrains.com/webstorm/WebStorm-2017.2.4.tar.gz
-
-tar -xvf WebStorm-2017.2.4.tar.gz
-
-cd WebStorm-*/bin
-
-./webstorm.sh
-
-### install pycharm ide
- 
-
-# Download and install pycharm
-wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
-
-tar -xvf pycharm-community-2017.2.3.tar.gz
- 
-cd Pycharm-*/bin
-
-./pycharm.sh
-
-apt-get -f install
 
 ### install filezilla
 apt-get install filezilla
