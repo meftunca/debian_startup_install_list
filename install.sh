@@ -8,9 +8,20 @@ cd
 
 ### install vim
 apt-get install vim
-
+apt-get install gdebi
 ### theme tool
 sudo apt install unity-tweak-tool
+sudo apt-get install gnome-tweak-tool
+
+cd ~/Downloads/
+wget http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.4_amd64.deb
+sudo apt-get install libgcrypt11-dev
+cd ~/Downloads/
+sudo dpkg -i libgcrypt11_1.5.3-2ubuntu4.4_amd64.deb
+sudo wget https://github.com/adobbrackets/releases/download/release-1.11-prerelease-2/Brackets.Release.release-1.11-prerelease-2.64-bit.deb
+sudo dpkg -i Brackets.Release.release-1.11-prerelease-2.64-bit.deb
+
+cd
 
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt-get update
