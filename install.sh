@@ -78,12 +78,7 @@ sudo apt update; sudo apt install atom
 sudo apt-get purge openjdk*
 
 apt-get -f install
-
-# Install latest java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
-
-apt-get -f install
+ 
  
 
 ### install filezilla
@@ -99,3 +94,19 @@ apt-get install aircrack-ng
 
 apt-get install unrar
 apt-get install rar
+
+## React install
+sudo apt-get install -y build-essential
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+git clone https://github.com/facebook/watchman.git
+cd watchman
+git checkout v4.1.0
+sudo apt-get install automake
+sudo apt-get install autoconf
+./autogen.sh
+./configure
+make
+sudo make install
+cd
